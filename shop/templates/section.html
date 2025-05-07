@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+{% block title %}<title>{{ section.title }}</title>{% endblock %}
+{% block description %}<meta name="description" content="Список фильмов из раздела {{ section.title }}" />{% endblock %}
+{% block keywords %}<meta name="keywords" content="список фильмов, список фильмов жанр, {{ section.title|lower }}" />{% endblock %}
+{% block header %}<h3>{{ section.title }}</h3>{% endblock %}
+{% block content %}
+    <div id="article">
+        <h2>Оплата и доставка</h2>
+        <p>У нас есть 2 варианта доставки: доставка по почте наложенным платежом и самовывоз.</p>
+        <p>Возможны и другие варианты оплаты и доставки, о которых можно договориться по телефону с менеджером после оформление заказа.</p>
+    </div>
+{% endblock %}
